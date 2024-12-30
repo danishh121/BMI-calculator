@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 300px;
+        }
+        .red{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+        .blue{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+        .yellow{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            margin: 10px;
+        }
+        .violet{
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            margin: 10px;
+        }
+        .black{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin: 10px;
+        }
+        .orange{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="parent">
+    <button class="red" id="red"></button>
+    <button class="blue" id="blue"></button>
+    <button class="yellow" id="yellow"></button>
+    <button class="black" id="black"></button>
+    <button class="violet" id="violet"></button>
+    <button class="orange" id="orange"></button>
+   </div> 
+   <script>
+
+
+//     const button = document.querySelectorAll('button');
+
+//     let arr = ["red", "blue","yellow","black","violet","orange" ]
+
+//     document.body.style.backgroundColor = "arr"
+//     button.forEach((button , index)=>{
+//     button.addEventListener('click',()=>{
+        
+//             document.body.style.backgroundColor =arr[index] ;
+        
+//     })
+// })
+
+const button = document.querySelectorAll('button');
+const body = document.querySelector('body');
+
+button.forEach(function(button){
+    button.addEventListener('click', (e)=>{
+        if(e.target.id == "red"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+        else if(e.target.id == "blue"){
+            document.body.style.backgroundColor = e.target.id;   
+        }
+        else if(e.target.id == "yellow"){
+            document.body.style.backgroundColor = e.target.id;   
+        }
+        else if(e.target.id == "black"){
+            document.body.style.backgroundColor = e.target.id;   
+        }
+        else if(e.target.id == "violet"){
+            document.body.style.backgroundColor = e.target.id;   
+        }
+        else if(e.target.id == "orange"){
+            document.body.style.backgroundColor = e.target.id;   
+        }
+    })
+})
+
+
+
+
+
+   </script>
+</body>
+</html>
